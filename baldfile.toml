@@ -1,0 +1,17 @@
+[project]
+name = "MyProject"
+
+[sources]
+files = ["src/main.cpp"]
+
+[includes]
+dirs = []
+
+[compiler]
+language = "g++"
+enableStdOption = true
+standard = "c++17"
+options = []
+
+[output]
+name = "my_app"
