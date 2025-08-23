@@ -14,7 +14,7 @@
       perSystem =
         { pkgs, ... }:
         {
-          packages.maxmurd = pkgs.writeText "maxmurd" (builtins.readFile ./README.md);
+          packages.maxmurd = pkgs.writeText "maxmurd" (builtins.readFile ./data);
         };
     };
 }
