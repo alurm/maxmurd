@@ -1,1 +1,1 @@
-@main def hello(): Unit = println("maxmurd")
+@main def hello(): Unit = println("8D")
