@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ProggerX/maxmurd.git"
+    "url": "git+https://github.com/alurm/maxmurd.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ProggerX/maxmurd/issues"
+    "url": "https://github.com/alurm/maxmurd/issues"
   },
-  "homepage": "https://github.com/ProggerX/maxmurd#readme"
+  "homepage": "https://github.com/alurm/maxmurd#readme"
 }
