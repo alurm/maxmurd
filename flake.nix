@@ -12,9 +12,18 @@
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = import inputs.systems;
       perSystem =
-        { pkgs, ... }:
+        { pkgs, config, ... }:
         {
-          packages.maxmurd = pkgs.writeText "maxmurd" (builtins.readFile ./data);
+          packages = {
+            maxmurd = pkgs.writeText "maxmurd" (builtins.readFile ./data);
+            maxmurd-readme = pkgs.writeText "maxmurd-readme" ''
+              # Max Mur's D
+
+              ```maxmur
+              ${builtins.readFile config.packages.maxmurd}
+              ```
+            '';
+          };
         };
     };
 }
