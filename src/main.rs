@@ -1,3 +1,5 @@
+const D: &'static str = include_str!("README.md");
+
 fn main() {
-    println!("Hello, world!");
+    print!("{D}");
 }
