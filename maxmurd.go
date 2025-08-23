@@ -121,6 +121,7 @@ func RunBalls() {
 	}
 
 	if n != 1 {
+		panic("balls went boom")
 
 	}
 
