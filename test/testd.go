@@ -1,12 +1,12 @@
-package main
+package main_test
 
 import (
 	"bytes"
-	"fmt"
 	"os"
+	"testing"
 )
 
-func main() {
+func TestD(t *testing.T) {
 	data, err := os.ReadFile("README.md")
 	if err != nil {
 		panic("skill issue")
@@ -14,7 +14,7 @@ func main() {
 
 	dLenght := bytes.Count(data, []byte("="))
 	if dLenght < 3 {
-		fmt.Fprintf(os.Stderr, "the D is too short")
+		t.Errorf("the D is too short, expected >= 3, got %d", dLenght)
 		os.Exit(69)
 	}
 
@@ -25,7 +25,7 @@ func main() {
 		return false
 	})
 	if !containsHead {
-		fmt.Fprintf(os.Stderr, "the D does not contains HEAD")
+		t.Errorf("the D does not contain HEAD")
 		os.Exit(69)
 	}
 }
